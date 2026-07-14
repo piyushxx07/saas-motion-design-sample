@@ -2,7 +2,7 @@
 
 A clean, animated timeline webpage showcasing a four‑part SaaS learning roadmap (Oct 2025 → Sep 2026). Each milestone features a short video (Saas_1.mp4 – Saas_4.mp4) that plays automatically and pauses others when played.
 
-![Screenshot of the webpage](screenshot.png)
+![Screenshot of the webpage](Screenshot.png)
 
 ## About Me
 I am passionate about motion design and love turning complex ideas into clear, engaging visual stories. My work blends smooth animation, thoughtful typography, and purposeful motion to create experiences that inform and delight. I enjoy experimenting with subtle interactions and micro‑animations that make interfaces feel alive without distracting the user.
