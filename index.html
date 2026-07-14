@@ -47,257 +47,259 @@
             left: 50%;
             transform: translateX(-50%);
             width: 100px;
-            height: 4px;
-            background: var(--secondary-color);
-            border-radius: 2px;
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 3px;
-            height: 100%;
-            background: var(--primary-color);
-            transform: translateX(-50%);
-            border-radius: 1.5px;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2.5rem;
-            width: 50%;
-            padding: 0 20px;
-            box-sizing: border-box;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            text-align: right;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
-            text-align: left;
-        }
-
-        .timeline-item:nth-child(1) { animation-delay: 0.2s; }
-        .timeline-item:nth-child(2) { animation-delay: 0.4s; }
-        .timeline-item:nth-child(3) { animation-delay: 0.6s; }
-        .timeline-item:nth-child(4) { animation-delay: 0.8s; }
-
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            background: var(--primary-color);
-            border: 3px solid var(--accent-color);
-            border-radius: 50%;
-            top: 28px;
-            transform: translateX(-50%);
-            z-index: 2;
-        }
-
-        .timeline-item:nth-child(odd)::after {
-            right: -7px;
-        }
-
-        .timeline-item:nth-child(even)::after {
-            left: -7px;
-        }
-
-        .timeline-content {
-            position: relative;
-            background: var(--text-light);
-            padding: 1.75rem;
-            border-radius: 10px;
-            box-shadow: var(--soft-shadow);
-            border-left: 4px solid var(--accent-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-        }
-
-        .timeline-content h2 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .timeline-content h2::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent-color);
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .timeline-content .date {
-            display: block;
-            display: block;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .timeline-content p {
-            color: var(--text-dark);
-            font-size: 1rem;
-            margin-bottom: 1.25rem;
-            line-height: 1.6;
-        }
-
-        .video-wrapper {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--soft-shadow);
-            margin-top: 1rem;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            display: block;
-            background: #000;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .timeline-item {
-                width: 100%;
-                padding: 0;
-                text-align: left;
-            }
-
-            .timeline-item:nth-child(odd),
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-
-            .timeline-item::after {
-                left: 16px !important;
-                transform: translateX(-50%);
-            }
-
-            .timeline-item:nth-child(even) .timeline-content {
-                left: 16px;
-            }
-
-            .timeline-item:nth-child(odd) .timeline-content {
-                left: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="timeline">
-        <h1>SaaS Video Learning Roadmap</h1>
-        <ul class="timeline-items">
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h2>SaaS_1</h2>
-                    <span class="date">October 2025</span>
-                    <p>Introduction to SaaS fundamentals, market analysis, and MVP planning. Learn the basics of Software as a Service business models and how to validate your idea.</p>
-                    <div class="video-wrapper">
-                        <video controls>
-                            <source src="Saas_1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h2>SaaS_2</h2>
-                    <span class="date">January 2026</span>
-                    <p>Building your MVP: tech stack selection, architecture design, and core feature development. From idea to working prototype.</p>
-                    <div class="video-wrapper">
-                        <video controls>
-                            <source src="Saas_2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h2>SaaS_3</h2>
-                    <span class="date">March 2026</span>
-                    <p>Growth strategies: user acquisition, retention tactics, and scaling your infrastructure. Learn how to acquire your first 1000 customers.</p>
-                    <div class="video-wrapper">
-                        <video controls>
-                            <source src="Saas_3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h2>SaaS_4</h2>
-                    <span class="date">June 2026</span>
-                    <p>Advanced topics: monetization strategies, team building, and preparing for Series A funding. From profitability to scale.</p>
-                    <div class="video-wrapper">
-                        <video controls>
-                            <source src="Saas_4.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const videos = document.querySelectorAll('video');
-            if (videos.length === 0) return;
-
-            // Autoplay the first video (muted to comply with autoplay policies)
-            const firstVideo = videos[0];
-            firstVideo.muted = true; // muted autoplay is usually allowed
-            firstVideo.play().catch(e => {
-                // Autoplay blocked, fallback to user interaction
-                console.log('Autoplay prevented:', e);
-            });
-
-            // Pause other videos when any video starts playing
-            videos.forEach(v => {
-                v.addEventListener('play', function () {
-                    videos.forEach(other => {
-                        if (other !== v && !other.paused) {
-                            other.pause();
-                        }
-                    });
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+            40:         width: 100px;
+41:         height: 4px;
+42:         background: var(--secondary-color);
+43:         border-radius: 2px;
+44:         }
+45: 
+46:         .timeline {
+47:             position: relative;
+48:             max-width: 900px;
+49:             margin: 0 auto;
+50:             padding: 2rem 0;
+51:         }
+52: 
+53:         .timeline::before {
+54:             content: '';
+55:             position: absolute;
+56:             top: 0;
+57:             left: 50%;
+58:             width: 3px;
+59:             height: 100%;
+60:             background: var(--primary-color);
+61:             transform: translateX(-50%);
+62:             border-radius: 1.5px;
+63:         }
+64: 
+65:         .timeline-item {
+66:             position: relative;
+67:             margin-bottom: 2.5rem;
+68:             width: 50%;
+69:             padding: 0 20px;
+70:             box-sizing: border-box;
+71:             opacity: 0;
+72:             transform: translateY(30px);
+73:             animation: fadeInUp 0.6s ease-out forwards;
+74:         }
+75: 
+76:         .timeline-item:nth-child(odd) {
+77:             left: 0;
+78:             text-align: right;
+79:         }
+80: 
+81:         .timeline-item:nth-child(even) {
+82:             left: 50%;
+83:             text-align: left;
+84:         }
+85: 
+86:         .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+87:         .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+88:         .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+89:         .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+90: 
+91:         .timeline-item::after {
+92:             content: '';
+93:             position: absolute;
+94:             width: 14px;
+95:             height: 14px;
+96:             background: var(--primary-color);
+97:             border: 3px solid var(--accent-color);
+98:             border-radius: 50%;
+99:             top: 28px;
+100:             transform: translateX(-50%);
+101:             z-index: 2;
+102:         }
+103: 
+104:         .timeline-item:nth-child(odd)::after {
+105:             right: -7px;
+106:         }
+107: 
+108:         .timeline-item:nth-child(even)::after {
+109:             left: -7px;
+110:         }
+111: 
+112:         .timeline-content {
+113:             position: relative;
+114:             background: var(--text-light);
+115:             padding: 1.75rem;
+116:             border-radius: 10px;
+117:             box-shadow: var(--soft-shadow);
+118:             border-left: 4px solid var(--accent-color);
+119:             transition: transform 0.3s ease, box-shadow 0.3s ease;
+120:         }
+121: 
+122:         .timeline-content:hover {
+123:             transform: translateY(-4px);
+124:             box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+125:         }
+126: 
+127:         .timeline-content h2 {
+128:             color: var(--secondary-color);
+129:             margin-bottom: 0.5rem;
+130:             font-size: 1.5rem;
+131:             display: flex;
+132:             align-items: center;
+133:             gap: 0.5rem;
+134:         }
+135: 
+136:         .timeline-content h2::before {
+137:             content: '';
+138:             width: 8px;
+139:             height: 8px;
+140:             background: var(--accent-color);
+141:             border-radius: 50%;
+142:             display: inline-block;
+12: inline-block;
+143:         }
+144: 
+145:         .timeline-content .date {
+146:             display: block;
+147:             display: block;
+148:             font-weight: 600;
+149:             color: var(--primary-color);
+150:             margin-bottom: 0.75rem;
+151:             font-size: 1.1rem;
+152:         }
+153: 
+154:         .timeline-content p {
+155:             color: var(--text-dark);
+156:             font-size: 1rem;
+157:             margin-bottom: 1.25rem;
+158:             line-height: 1.6;
+159:         }
+160: 
+161:         .video-wrapper {
+162:             border-radius: 8px;
+163:             overflow: hidden;
+164:             box-shadow: var(--soft-shadow);
+165:             margin-top: 1rem;
+166:         }
+167: 
+168:         video {
+169:             width: 100%;
+170:             height: auto;
+171:             display: block;
+172:             background: #000;
+173:         }
+174: 
+175:         @keyframes fadeInUp {
+176:             to {
+177:                 opacity: 1;
+178:                 transform: translateY(0);
+179:             }
+180:         }
+181: 
+182:         @media (max-width: 768px) {
+183:             .timeline-item {
+184:                 width: 100%;
+185:                 padding: 0;
+186:                 text-align: left;
+187:             }
+188: 
+189:             .timeline-item:nth-child(odd),
+190:             .timeline-item:nth-child(even) {
+191:                 left: 0;
+192:             }
+193: 
+194:             .timeline-item::after {
+195:                 left: 16px !important;
+196:                 transform: translateX(-50%);
+197:             }
+198: 
+199:             .timeline-item:nth-child(even) .timeline-content {
+200:                 left: 16px;
+201:             }
+202: 
+203:             .timeline-item:nth-child(odd) .timeline-content {
+204:                 left: 16px;
+205:             }
+206:         }
+207:     </style>
+208: </head>
+209: <body>
+210:     <div class="timeline">
+211:         <h1>SaaS Video Learning Roadmap</h1>
+212:         <ul class="timeline-items">
+213:             <li class="timeline-item">
+214:                 <div class="timeline-content">
+215:                     <h2>SaaS_1</h2>
+216:                     <span class="date">October 2025</span>
+217:                     <p>Introduction to SaaS fundamentals, market analysis, and MVP planning. Learn the basics of Software as a Service business models and how to validate your idea.</p>
+218:                     <div class="video-wrapper">
+219:                         <video controls preload="metadata">
+220:                             <source src="Saas_1.mp4" type="video/mp4">
+221:                             Your browser does not support the video tag.
+222:                         </video>
+223:                     </div>
+224:                 </div>
+225:             </li>
+226:             <li class="timeline-item">
+227:                 <div class="timeline-content">
+228:                     <h2>SaaS_2</h2>
+229:                     <span class="date">January 2026</span>
+230:                     <p>Building your MVP: tech stack selection, architecture design, and core feature development. From idea to working prototype.</p>
+231:                     <div class="video-wrapper">
+232:                         <video controls preload="metadata">
+233:                             <source src="Saas_2.mp4" type="video/mp4">
+234:                             Your browser does not support the video tag.
+235:                         </video>
+236:                     </div>
+237:                 </div>
+238:             </li>
+239:             <li class="timeline-item">
+240:                 <div class="timeline-content">
+241:                     <h2>SaaS_3</h2>
+242:                     <span class="date">March 2026</span>
+243:                     <p>Growth strategies: user acquisition, retention tactics, and scaling your infrastructure. Learn how to acquire your first 1000 customers.</p>
+244:                     <div class="video-wrapper">
+245:                         <video controls preload="metadata">
+246:                             <source src="Saas_3.mp4" type="video/mp4">
+247:                             Your browser does not support the video tag.
+248:                         </video>
+249:                     </div>
+250:                 </div>
+251:             </li>
+252:             <li class="timeline-item">
+253:                 <div class="timeline-content">
+254:                     <h2>SaaS_4</h2>
+255:                     <span class="date">June 2026</span>
+256:                     <p>Advanced topics: monetization strategies, team building, and preparing for Series A funding. From profitability to scale.</p>
+257:                     <div class="video-wrapper">
+258:                         <video controls preload="metadata">
+259:                             <source src="Saas_4.mp4" type="video/mp4">
+260:                             Your browser does not support the video tag.
+261:                         </video>
+262:                     </div>
+263:                 </div>
+264:             </li>
+265:         </ul>
+266:     </div>
+267: 
+268:     <script>
+269:         document.addEventListener('DOMContentLoaded', function () {
+270:             const videos = document.querySelectorAll('video');
+271:             if (videos.length === 0) return;
+272: 
+273:             // Autoplay the first video (muted to comply with autoplay policies)
+274:             const firstVideo = videos[0];
+275:             firstVideo.muted = true; // muted autoplay is usually allowed
+276:             firstVideo.play().catch(e => {
+277:                 // Autoplay blocked, fallback to user interaction
+278:                 console.log('Autoplay prevented:', e);
+279:             });
+280: 
+281:             // Pause other videos when any video starts playing
+282:             videos.forEach(v => {
+283:                 v.addEventListener('play', function () {
+284:                     videos.forEach(other => {
+285:                         if (other !== v && !other.paused) {
+286:                             other.pause();
+287:                         }
+289:                     });
+290:                 });
+291:             });
+292:         });
+293:     </script>
+294: </body>
+295: </html>
