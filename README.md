@@ -1,6 +1,6 @@
 # SaaS Video Learning Roadmap
 
-A clean, animated timeline webpage showcasing a four‑part SaaS learning roadmap (Oct 2025 → Sep 2026). Each milestone features a short video (Saas_1.mp4 – Saas_4.mp4) that plays automatically and pauses others when played.
+A clean, animated timeline webpage showcasing a four‑part SaaS learning roadmap (Oct 2025 → Sep 2026). Each milestone features a short video that plays automatically and pauses others when played.
 
 ![Screenshot of the webpage](./screenshot.png)
 
@@ -8,10 +8,31 @@ A clean, animated timeline webpage showcasing a four‑part SaaS learning roadma
 I am passionate about motion design and love turning complex ideas into clear, engaging visual stories. My work blends smooth animation, thoughtful typography, and purposeful motion to create experiences that inform and delight. I enjoy experimenting with subtle interactions and micro‑animations that make interfaces feel alive without distracting the user.
 
 ## Videos
-- [Saas_1.mp4](./Saas_1.mp4) – Introduction to SaaS fundamentals (Oct 2025)  
-- [Saas_2.mp4](./Saas_2.mp4) – Building your MVP (Mar 2026)  
-- [Saas_3.mp4](./Saas_3.mp4) – Growth strategies (Jun 2026)  
-- [Saas_4.mp4](./Saas_4.mp4) – Advanced topics & Series A prep (Sep 2026)
+You can preview each video directly in this README (click to play):
+
+<video width="320" controls>
+  <source src="./Saas_1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Saas_1.mp4 – Introduction to SaaS fundamentals (Oct 2025)*
+
+<video width="320" controls>
+  <source src="./Saas_2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Saas_2.mp4 – Building your MVP (Mar 2026)*
+
+<video width="320" controls>
+  <source src="./Saas_3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Saas_3.mp4 – Growth strategies (Jun 2026)*
+
+<video width="320" controls>
+  <source src="./Saas_4.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Saas_4.mp4 – Advanced topics & Series A prep (Sep 2026)*
 
 ## How to Run
 1. Clone or download this repository.  
