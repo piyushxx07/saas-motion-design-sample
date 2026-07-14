@@ -15,6 +15,8 @@ Click the links to view each video directly in the repository:
 - [Saas_3.mp4](./Saas_3.mp4) – Growth strategies (Jun 2026)
 - [Saas_4.mp4](./Saas_4.mp4) – Advanced topics & Series A prep (Sep 2026)
 
+If you are unable to access the videos here, you can view them in this Google Drive folder: https://drive.google.com/drive/folders/1ybXrCopPAsYw5fyHogJlEBiggt0EhGPc?usp=sharing
+
 ## How to Run
 1. Clone or download this repository.  
 2. Ensure the four `.mp4` files and `screenshot.png` are in the same folder as `index.html`.  
